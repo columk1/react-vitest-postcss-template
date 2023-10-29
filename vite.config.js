@@ -6,7 +6,7 @@ import webfontDownload from 'vite-plugin-webfont-dl'
 export default defineConfig({
   plugins: [react(), webfontDownload([])],
   test: {
-    global: true,
+    globals: true,
     environment: 'jsdom',
     setupFiles: './tests/setup.js',
   },
